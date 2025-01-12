@@ -1,0 +1,29 @@
+compiled:
+- env.get('https://www.google.com/')
+- text_boxes = env.find_elements(by='xpath', value="//input|//div[@role = 'textarea']|//div[@role
+  = 'textbox']")
+- visible_text_box = None
+- 'for text_box in text_boxes:'
+- '    if text_box.is_displayed():'
+- '        visible_text_box = text_box'
+- '        break'
+- env.click(visible_text_box)
+- env.send_keys(visible_text_box, "buttered cat paradox")
+- env.send_keys(visible_text_box, Keys.ENTER)
+- env.wait(2)
+- anchors = env.find_elements(by='xpath', value="//a[contains(@href, 'wikipedia')]")
+- env.click(anchors[0])
+- env.wait(2)
+- summary = env.retrieve_information("Summarize:")
+- print(summary)
+instructions:
+- Go to Google.com
+- Find all text areas.
+- Find the first visible textarea.
+- Click on the first visible textarea.
+- Type in "buttered cat paradox" and press enter.
+- Wait 2 seconds.
+- Find all anchor elements that link to Wikipedia.
+- Click on the first one.
+- Wait for 2 seconds.
+- Summarize the page and print out the summary.
