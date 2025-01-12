@@ -1,10 +1,6 @@
 # 🛫 Browser Boss
 
-An intelligent web browsing agent controlled by natural language.
-
-![demo](assets/demo_buffalo.gif)
-
-Language is the most natural interface through which humans give and receive instructions. Instead of writing bespoke automation or scraping code which is brittle to changes, creating and adding agents should be as simple as writing plain English.
+An intelligent web browsing agent controlled by natural language. Language is the most natural interface through which humans give and receive instructions. Instead of writing bespoke automation or scraping code which is brittle to changes, creating and adding agents should be as simple as writing plain English.
 
 ## 🏗️ Installation
 
